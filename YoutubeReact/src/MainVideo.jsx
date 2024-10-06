@@ -2,7 +2,6 @@
 import React, { useState } from "react";
 import Like from "../src/assets/Like.png";
 import Dislike from "../src/assets/dislike.png";
-import Share from "../src/assets/Share.png";
 import CommentProfile from "../src/assets/Profile.png";
 
 function MainVideo({ videoData }) {
@@ -39,9 +38,6 @@ function MainVideo({ videoData }) {
           <span className="flex items-center text-gray-800 hover:text-red-500 cursor-pointer">
             <img src={Dislike} alt="Dislike" className="h-6 w-6 mr-1" />
             {videoData.statistics.dislikeCount}
-          </span>
-          <span className="flex items-center text-gray-800 hover:text-blue-500 cursor-pointer">
-            <img src={Share} alt="Share" className="h-6 w-6 mr-1" /> Share
           </span>
         </div>
       </div>
